@@ -7,8 +7,4 @@ The project uses the following concepts to accurately obtain the score from the 
 
 Future plans for the program include:
 * Track overshooting/undershooting when aiming at the bots.
-<<<<<<< HEAD
 * Possible webpage to create a leaderboard among the VALORANT community.
-=======
-* Possible webpage to create a leaderboard among the VALORANT community.
->>>>>>> dc6e0def8e01232feae6a354b4e7b7b286e0c9ec
