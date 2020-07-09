@@ -7,12 +7,12 @@ This project is intended for people who play Riot Games' tactical shooter, Valor
 * Ability to change windows when in-game (Alt+Tab)
 
 ## Installation
-1. Download the repository as a zip file.
-2. Unzip the repository files.
+1. Download the latest release ([here](https://github.com/vincentvilo/ocr-stats-recorder/releases/tag/v1.0)).
+2. Unzip the files.
 
 The following steps are optional but **recommended**: 
 
-3. Navigate to the directory "dist/range_recorder/" within the repository.
+3. Navigate to the directory "dist/range_recorder/" within the unzipped files.
 4. Create a shortcut for "range_recorder.exe" (Right click "range_recorder.exe" > Create shortcut) 
 5. Move shortcut onto desktop for convenience.
 
