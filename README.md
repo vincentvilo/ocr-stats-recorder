@@ -31,12 +31,12 @@ Scores are saved in "dist/range_recorder/output_files/scores.csv"
 * HSV color detection
 ## Version History
 The project went through different versions based on how accurately the program would read the user's score in the Practice Range.
-### v1: Screenshot of Scoreboard Region
+### v0.1: Screenshot of Scoreboard Region
 
 ![Screenshot of Scoreboard](images/scoreboard.png)
 
 Initially took a screenshot of the region where the scoreboard _should_ be. This method was unreliable since the region might depend on the size of the user's screen, and the user would have to aim at a specific point in order for the image to be detected.
-### v2: Scoreboard Detection with HSV Filters
+### v1.0: Scoreboard Detection with HSV Filters
 
 Used HSV color detection to find the largest contour of a certain color. In this case, the HSV algorithms were tuned to search for a color similar to the scoreboard, and the largest contour that appeared was the scoreboard. 
 
