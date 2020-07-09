@@ -7,7 +7,7 @@ This project is intended for people who play Riot Games' tactical shooter, Valor
 * Ability to change windows when in-game (Alt+Tab)
 
 ## Installation
-1. Download the latest release ([here](https://github.com/vincentvilo/ocr-stats-recorder/releases/tag/v1.0)).
+1. Download the latest release [here](https://github.com/vincentvilo/ocr-stats-recorder/archive/v1.0.zip).
 2. Unzip the files.
 
 The following steps are optional but **recommended**: 
@@ -24,6 +24,7 @@ The following steps are optional but **recommended**:
 5. Start practicing! Range scores are recorded in "dist/range_recorder/output_files/scores.csv".
     * You only have to run the program once for multiple sessions.
 6. To exit out of the recorder, press 'ESC' before/after shooting the "START" button in-game.
+Scores are saved in "dist/range_recorder/output_files/scores.csv"
 
 ## Concepts Used
 * optical character recognition ([OCR](https://en.wikipedia.org/wiki/Optical_character_recognition))
