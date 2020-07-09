@@ -19,9 +19,10 @@ The following steps are optional but **recommended**:
 ## Usage
 1. Start "VALORANT.exe".
 2. Navigate to the Shooting Range (Play > Practice > Shooting Test > Enter Range)
-3. Start "range_recorder.exe" by clicking on the desktop shortcut OR navigating to "dist/range_recorder/range_recorder.exe"
+3. Start "range_recorder" by clicking on the desktop shortcut OR navigating to "dist/range_recorder/range_recorder.exe"
+    * If starting the program creates a "dangerous file" prompt, click "More info," then click "Run anyway".
 4. Wait for program to output "RANGE RECORDER HAS STARTED!"
-5. Start practicing! Range scores are recorded in "dist/range_recorder/output_files/scores.csv".
+5. Start practicing! Range scores are recorded in "dist/range_recorder/output_files/scores.csv" while the recorder window is open.
     * You only have to run the program once for multiple sessions.
 6. To exit out of the recorder, press 'ESC' before/after shooting the "START" button in-game.
 Scores are saved in "dist/range_recorder/output_files/scores.csv"
