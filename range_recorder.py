@@ -21,7 +21,6 @@ for i in range(10, 31):
 def get_score():
     ready_to_exit = False
     final_score = 0
-    print("To exit out of the program, press 'ESC' before/after starting a range session\n")
     print("RANGE NOT STARTED\n")
     fw.create_dir(out_dirname, out_filename)
     while not(ready_to_exit):
@@ -38,7 +37,7 @@ def get_score():
                 processed_remain = ip.get_processed_img(remain_region_img)
                 remain_str = pytesseract.image_to_string(processed_remain)
                 if(("00" in remain_str) or ("OO" in remain_str)):
-                    print("FINDING SCORE...\n")
+                    print("FINDING SCORE...")
                     score_region_img = ip.get_score_region()
                     processed_score = ip.get_processed_img(score_region_img)
                     score_str = pytesseract.image_to_string(processed_score)
@@ -48,13 +47,13 @@ def get_score():
                                 final_score = int(num)
                             ready_to_exit = True
                             break
-    print("==================================================================")
-    print("RANGE COMPLETED!\n")
-    print("On that trial, you scored: " + str(final_score) + "\n")
-    print("==================================================================")
+    print("============================ RANGE COMPLETED! ============================")
+    print("On that trial, you scored: " + str(final_score) + "")
+    print("==========================================================================\n")
     return final_score
 
 if __name__ == "__main__":
+    print("To exit out of the program, press 'ESC' before/after starting a range session\n")
     print("RANGE RECORDER HAS STARTED!\n")
     while True:
         score = get_score()
@@ -63,5 +62,5 @@ if __name__ == "__main__":
         else:
             fw.write_score(score, output_path)
     print("Recorder exiting...")
-    time.sleep(2)
+    time.sleep(1)
 
