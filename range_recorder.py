@@ -1,12 +1,14 @@
 import cv2
 import pytesseract
-import numpy as np
 from PIL import Image
 import pyautogui
-import image_processing as ip
-import file_writer as fw
 import time
 import msvcrt
+import numpy as np
+import image_processing as ip
+import file_writer as fw
+import scores_calculator as calc
+
 
 pytesseract.pytesseract.tesseract_cmd = r'Tesseract-OCR\tesseract'
 
@@ -28,8 +30,13 @@ def get_score():
         processed_remain = ip.get_processed_img(remain_region_img)
         remain_str = pytesseract.image_to_string(processed_remain)
         if msvcrt.kbhit(): # 27 -> ESC key
-	        if ord(msvcrt.getch()) == 27:
-	            return -1
+            keypress = msvcrt.getch()
+            if(ord(keypress) == 27):
+                return -1
+            elif(ord(keypress) == ord('1')):
+                calc.print_overall_average()
+            elif(ord(keypress) == ord('2')):
+                calc.print_weekly_average()
         if "30" in remain_str or "29" in remain_str:
             print("RANGE DETECTED! WAITING TO FINISH RANGE...\n")
             while not(ready_to_exit):
@@ -47,13 +54,18 @@ def get_score():
                                 final_score = int(num)
                             ready_to_exit = True
                             break
-    print("============================ RANGE COMPLETED! ============================")
+    print("=========================== RANGE COMPLETED! ===========================")
     print("On that trial, you scored: " + str(final_score) + "")
-    print("==========================================================================\n")
+    print("========================================================================\n")
     return final_score
 
 if __name__ == "__main__":
-    print("To exit out of the program, press 'ESC' before/after starting a range session\n")
+    print("=========================== INSTRUCTIONS ===========================")
+    print("To see your average overall, press 1.")
+    print("To see your average this week, press 2.")
+    print("To exit out of the program, press 'ESC'.")
+    print("The button must be pressed before/after starting a range session.")
+    print("====================================================================\n")
     print("RANGE RECORDER HAS STARTED!\n")
     while True:
         score = get_score()
