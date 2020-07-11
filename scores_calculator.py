@@ -1,5 +1,6 @@
 import datetime as dt
 import csv
+import constants
 
 def get_date_str(date):
     return str(date)[0:10]
@@ -31,13 +32,16 @@ def get_weekly_average():
     week_range = get_week_range()
     total_scores = 0
     num_scores = 0
-    scores_file = open("output_files/scores.csv", 'r')
-    reader = csv.DictReader(scores_file)
-    for row in reader:
-        if row['Date'] in week_range:
-            total_scores += int(row['Score'])
-            num_scores += 1
-    scores_file.close()
+    for day in week_range:
+        try:
+            day_file = open(constants.OUT_DIRNAME + "/" + day + ".txt", 'r')
+            for line in day_file.readlines():
+                if line.strip() != 'Scores':
+                    total_scores += int(line.strip())
+                    num_scores += 1
+            day_file.close()
+        except FileNotFoundError:
+            pass
     if num_scores == 0:
         return -1
     return total_scores / num_scores
@@ -45,7 +49,7 @@ def get_weekly_average():
 def get_overall_average():
     total_scores = 0
     num_scores = 0
-    scores_file = open("output_files/scores.csv", 'r')
+    scores_file = open(constants.ALLSCORES_PATH, 'r')
     reader = csv.DictReader(scores_file)
     for row in reader:
         total_scores += int(row['Score'])
@@ -55,18 +59,4 @@ def get_overall_average():
         return -1
     return total_scores / num_scores
 
-def print_weekly_average():
-    begin_monday = get_date_str(get_begin_monday())
-    end_sunday= get_date_str(get_end_sunday())
-    avg = round(get_weekly_average(), 2)
-    if(avg == -1):
-        print("No scores found in output file!")
-    else:
-        print("This week, from " + begin_monday + " to " + end_sunday + ", your average was " + str(avg) + ".")
 
-def print_overall_average():
-    avg = round(get_overall_average(), 2)
-    if(avg == -1):
-        print("No scores found in output file!")
-    else:
-        print("Ever since you started using the recorder, your average score is " + str(avg) + ".")
