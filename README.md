@@ -7,7 +7,7 @@ This project is intended for people who play Riot Games' tactical shooter, Valor
 * Ability to change windows when in-game (Alt+Tab)
 
 ## Installation
-1. Download the latest release [here](https://github.com/vincentvilo/ocr-stats-recorder/archive/v1.0.zip).
+1. Download the source code from the latest release [here](https://github.com/vincentvilo/ocr-stats-recorder/releases/tag/v1.1).
 2. Unzip the files.
 
 The following steps are optional but **recommended**: 
@@ -50,7 +50,6 @@ Proved to be more reliable than taking a screenshot of the center. However, the 
 * Add customized options for the program to work with the user's display settings (i.e. colorblind options).
 * Track overshooting/undershooting when aiming at the bots; could help users improve their aim.
 * Webpage to create a leaderboard for the Valorant community.
-* Customized options
 
 ## Bugs
 * The recorder might not work depending on the game's color intensity since the program relies on color detection. A new version is being created to account for these differences, but in the meantime, the graphics settings that work with the program are shown here. 
