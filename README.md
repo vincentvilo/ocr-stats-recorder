@@ -22,8 +22,9 @@ The following steps are optional but **recommended**:
 3. Start "range_recorder" by clicking on the desktop shortcut OR navigating to "dist/range_recorder/range_recorder.exe"
     * If starting the program creates a "dangerous file" prompt, click "More info," then click "Run anyway".
 4. Wait for program to output "RANGE RECORDER HAS STARTED!"
-5. Start practicing! Range scores are recorded in "dist/range_recorder/output_files/scores.csv" while the recorder window is open.
+5. Start practicing with the speed of your choice! Range scores are recorded in "dist/range_recorder/output_files/scores.csv" while the recorder window is open.
     * You only have to run the program once for multiple trials.
+    * Program does not currently work for the "Streak" mode and only works for the "Speed" mode (shoot 30 bots on easy, medium, or hard)
 6. To exit out of the recorder, press 'ESC' before/after shooting the "START" button in-game.
 
 Scores are saved in "dist/range_recorder/output_files/_allscores.csv"
@@ -50,6 +51,9 @@ Proved to be more reliable than taking a screenshot of the center. However, the 
 * Add customized options for the program to work with the user's display settings (i.e. colorblind options).
 * Track overshooting/undershooting when aiming at the bots; could help users improve their aim.
 * Webpage to create a leaderboard for the Valorant community.
+* Have program able to work for different challenges (streak mode)
+* Read and record difficulty of range
+* Record what gun is being used
 
 ## Bugs
 * The recorder might not work depending on the game's color intensity since the program relies on color detection. A new version is being created to account for these differences, but in the meantime, the graphics settings that work with the program are shown here. 
