@@ -7,7 +7,7 @@ This project is intended for people who play Riot Games' tactical shooter, Valor
 * Ability to change windows when in-game (Alt+Tab)
 
 ## Installation
-1. Download the source code from the latest release [here](https://github.com/vincentvilo/ocr-stats-recorder/releases/tag/v1.1).
+1. Download the source code as a zip file from the latest release [here](https://github.com/vincentvilo/ocr-stats-recorder/releases/tag/v1.1).
 2. Unzip the files.
 
 The following steps are optional but **recommended**: 
