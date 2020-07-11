@@ -1,3 +1,6 @@
 *.css linguist-detectable=false
 *.html linguist-detectable=false
+*.htm linguist-detectable=false
 *.py linguist-detectable=true
+dist/* linguist-vendored
+build/ linguist-vendored
