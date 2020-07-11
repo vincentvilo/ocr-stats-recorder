@@ -158,6 +158,8 @@ imports:
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#collections.abc">collections.abc</a>
+ &#8226;   <a href="#console">console</a>
+ &#8226;   <a href="#constants">constants</a>
  &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#cv2">cv2</a>
  &#8226;   <a href="#encodings">encodings</a>
@@ -295,6 +297,7 @@ imports:
  &#8226;   <a href="#msvcrt">msvcrt</a>
  &#8226;   <a href="#numpy">numpy</a>
  &#8226;   <a href="#operator">operator</a>
+ &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pyautogui">pyautogui</a>
  &#8226;   <a href="#pyi_rth__tkinter.py">pyi_rth__tkinter.py</a>
  &#8226;   <a href="#pyi_rth_mplconfig.py">pyi_rth_mplconfig.py</a>
@@ -654,7 +657,7 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>'org.python'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#pickle">pickle</a>
+    <a href="#copy">copy</a>
  &#8226;   <a href="#setuptools.sandbox">setuptools.sandbox</a>
  &#8226;   <a href="#xml.sax">xml.sax</a>
 
@@ -4490,7 +4493,6 @@ imports:
  &#8226;   <a href="#PIL.ImageSequence">PIL.ImageSequence</a>
  &#8226;   <a href="#PIL.ImageShow">PIL.ImageShow</a>
  &#8226;   <a href="#PIL.ImageTk">PIL.ImageTk</a>
- &#8226;   <a href="#PIL.Jpeg2KImagePlugin">PIL.Jpeg2KImagePlugin</a>
  &#8226;   <a href="#PIL.JpegImagePlugin">PIL.JpegImagePlugin</a>
  &#8226;   <a href="#PIL.PaletteFile">PIL.PaletteFile</a>
  &#8226;   <a href="#PIL.PdfParser">PIL.PdfParser</a>
@@ -5642,8 +5644,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#PIL">PIL</a>
- &#8226;   <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
+    <a href="#PIL.IcnsImagePlugin">PIL.IcnsImagePlugin</a>
  &#8226;   <a href="#PIL.Image">PIL.Image</a>
 
   </div>
@@ -10897,6 +10898,41 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="console"></a>
+  <a target="code" href="///D:/OneDrive%20-%20California%20Polytechnic%20State%20University/Projects/ocr-stats-recorder/console.py" type="text/plain"><tt>console</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#constants">constants</a>
+ &#8226;   <a href="#csv">csv</a>
+ &#8226;   <a href="#file_writer">file_writer</a>
+ &#8226;   <a href="#matplotlib.pyplot">matplotlib.pyplot</a>
+ &#8226;   <a href="#os">os</a>
+ &#8226;   <a href="#scores_calculator">scores_calculator</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#range_recorder.py">range_recorder.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="constants"></a>
+  <a target="code" href="///D:/OneDrive%20-%20California%20Polytechnic%20State%20University/Projects/ocr-stats-recorder/constants.py" type="text/plain"><tt>constants</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imported by:
+    <a href="#console">console</a>
+ &#8226;   <a href="#file_writer">file_writer</a>
+ &#8226;   <a href="#range_recorder.py">range_recorder.py</a>
+ &#8226;   <a href="#scores_calculator">scores_calculator</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="contextlib"></a>
   <a target="code" href="///C:/users/vincent/appdata/local/programs/python/python38-32/lib/contextlib.py" type="text/plain"><tt>contextlib</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
@@ -11027,8 +11063,8 @@ imported by:
   <a target="code" href="///C:/users/vincent/appdata/local/programs/python/python38-32/lib/copy.py" type="text/plain"><tt>copy</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#copyreg">copyreg</a>
- &#8226;   <a href="#org">org</a>
+    <a href="#'org.python'">'org.python'</a>
+ &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#weakref">weakref</a>
 
@@ -11165,7 +11201,9 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#importlib.metadata">importlib.metadata</a>
+    <a href="#console">console</a>
+ &#8226;   <a href="#file_writer">file_writer</a>
+ &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
  &#8226;   <a href="#matplotlib.mlab">matplotlib.mlab</a>
  &#8226;   <a href="#pandas._testing">pandas._testing</a>
  &#8226;   <a href="#pandas.io.formats.csvs">pandas.io.formats.csvs</a>
@@ -16667,14 +16705,17 @@ imported by:
   <a target="code" href="///D:/OneDrive%20-%20California%20Polytechnic%20State%20University/Projects/ocr-stats-recorder/file_writer.py" type="text/plain"><tt>file_writer</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#datetime">datetime</a>
+    <a href="#constants">constants</a>
+ &#8226;   <a href="#csv">csv</a>
+ &#8226;   <a href="#datetime">datetime</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#os">os</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#range_recorder.py">range_recorder.py</a>
+    <a href="#console">console</a>
+ &#8226;   <a href="#range_recorder.py">range_recorder.py</a>
 
   </div>
 
@@ -24664,7 +24705,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#matplotlib">matplotlib</a>
+    <a href="#console">console</a>
+ &#8226;   <a href="#matplotlib">matplotlib</a>
  &#8226;   <a href="#matplotlib._layoutbox">matplotlib._layoutbox</a>
  &#8226;   <a href="#matplotlib.backend_bases">matplotlib.backend_bases</a>
  &#8226;   <a href="#matplotlib.backends.backend_webagg_core">matplotlib.backends.backend_webagg_core</a>
@@ -32718,7 +32760,7 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>org</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#copy">copy</a>
+    <a href="#pickle">pickle</a>
 
   </div>
 
@@ -32870,6 +32912,7 @@ imported by:
  &#8226;   <a href="#concurrent.futures.process">concurrent.futures.process</a>
  &#8226;   <a href="#concurrent.futures.thread">concurrent.futures.thread</a>
  &#8226;   <a href="#configparser">configparser</a>
+ &#8226;   <a href="#console">console</a>
  &#8226;   <a href="#ctypes">ctypes</a>
  &#8226;   <a href="#ctypes._aix">ctypes._aix</a>
  &#8226;   <a href="#ctypes.macholib.dyld">ctypes.macholib.dyld</a>
@@ -33104,6 +33147,7 @@ imported by:
  &#8226;   <a href="#pytesseract.pytesseract">pytesseract.pytesseract</a>
  &#8226;   <a href="#pywintypes">pywintypes</a>
  &#8226;   <a href="#random">random</a>
+ &#8226;   <a href="#range_recorder.py">range_recorder.py</a>
  &#8226;   <a href="#runpy">runpy</a>
  &#8226;   <a href="#scipy.__config__">scipy.__config__</a>
  &#8226;   <a href="#scipy._distributor_init">scipy._distributor_init</a>
@@ -42467,8 +42511,7 @@ imported by:
   <a target="code" href="///C:/users/vincent/appdata/local/programs/python/python38-32/lib/pickle.py" type="text/plain"><tt>pickle</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#'org.python'">'org.python'</a>
- &#8226;   <a href="#_compat_pickle">_compat_pickle</a>
+    <a href="#_compat_pickle">_compat_pickle</a>
  &#8226;   <a href="#_pickle">_pickle</a>
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#codecs">codecs</a>
@@ -42477,6 +42520,7 @@ imports:
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#itertools">itertools</a>
+ &#8226;   <a href="#org">org</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#struct">struct</a>
@@ -48261,6 +48305,7 @@ imports:
  &#8226;   <a href="#pygments.lexers._mql_builtins">pygments.lexers._mql_builtins</a>
  &#8226;   <a href="#pygments.lexers._scilab_builtins">pygments.lexers._scilab_builtins</a>
  &#8226;   <a href="#pygments.lexers._stan_builtins">pygments.lexers._stan_builtins</a>
+ &#8226;   <a href="#pygments.lexers._tsql_builtins">pygments.lexers._tsql_builtins</a>
  &#8226;   <a href="#pygments.modeline">pygments.modeline</a>
  &#8226;   <a href="#pygments.plugin">pygments.plugin</a>
  &#8226;   <a href="#pygments.util">pygments.util</a>
@@ -48757,6 +48802,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#pygments">pygments</a>
+ &#8226;   <a href="#pygments.lexers">pygments.lexers</a>
  &#8226;   <a href="#pygments.lexers.sql">pygments.lexers.sql</a>
 
   </div>
@@ -62042,13 +62088,15 @@ imported by:
   <a target="code" href="///D:/OneDrive%20-%20California%20Polytechnic%20State%20University/Projects/ocr-stats-recorder/scores_calculator.py" type="text/plain"><tt>scores_calculator</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#csv">csv</a>
+    <a href="#constants">constants</a>
+ &#8226;   <a href="#csv">csv</a>
  &#8226;   <a href="#datetime">datetime</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#range_recorder.py">range_recorder.py</a>
+    <a href="#console">console</a>
+ &#8226;   <a href="#range_recorder.py">range_recorder.py</a>
 
   </div>
 
